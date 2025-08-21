@@ -5,8 +5,7 @@ import { polygon } from "thirdweb/chains";
 import { client } from "../lib/client";
 
 // 👇 Sostituisci con l'indirizzo ERC‑20 di Bitnun
-const BITNUN_ADDRESS = "0xINCOLLA_IL_TUO_CONTRACT_ADDRESS";
-
+const BITNUN_ADDRESS = 0x89b0bf7cc5e4361D9dcfbD6a897437E416af4aa0
 export default function Home() {
   const account = useActiveAccount();
   const contract = getContract({ client, address: BITNUN_ADDRESS, chain: polygon });
